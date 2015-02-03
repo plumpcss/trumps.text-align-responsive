@@ -1,0 +1,61 @@
+/*------------------------------------*\
+	#TEXT-ALIGN-RESPONSIVE
+\*------------------------------------*/
+
+/**
+ * Responsive text align classes based on your responsive settings.
+ */
+
+@if $plump-enable-text-align--symbol == true {
+
+	@each $breakpoint in $breakpoints {
+
+		$alias:     nth($breakpoint, 1);
+		$condition: nth($breakpoint, 2);
+
+		// This isn’t ideal, but we definitely don’t want to generate text-aligns
+		// for retina devices. Exclude retina text-aligns manually.
+		@if ($alias != "retina") {
+
+			@include media-query($alias) {
+
+				[class~="#{$plump-namespace}#{$alias}-ta\<"]     { text-align: left !important; }
+				[class~="#{$plump-namespace}#{$alias}-ta\>"]     { text-align: right !important; }
+				[class~="#{$plump-namespace}#{$alias}-ta\<\>"]   { text-align: center !important; }
+
+
+			} // Close media query.
+
+		} // Close retina check.
+
+	} // Close breakpoints loop.
+
+} // Close fractions @if.
+
+
+
+
+@else {
+
+	@each $breakpoint in $breakpoints {
+
+		$alias:     nth($breakpoint, 1);
+		$condition: nth($breakpoint, 2);
+
+		// This isn’t ideal, but we definitely don’t want to generate text-aligns
+		// for retina devices. Exclude retina text-aligns manually.
+		@if ($alias != retina) {
+
+			@include media-query($alias) {
+
+				.#{$plump-namespace}#{$alias}-tal                { text-align: left !important; }
+				.#{$plump-namespace}#{$alias}-tar                { text-align: right !important; }
+				.#{$plump-namespace}#{$alias}-tac                { text-align: center !important; }
+
+			} // Close media query.
+
+		} // Close retina check.
+
+	} // Close breakpoints loop.
+
+} // Close fractions @if.

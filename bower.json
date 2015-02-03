@@ -1,0 +1,23 @@
+{
+  "name": "plumpcss-responsive-text-align",
+  "version": "0.1.0",
+  "authors": [
+    "Jon Hurrell <jon@plumpdigital.co.uk>"
+  ],
+  "description": "Responsively controlled text-align classes for the plumpcss framework",
+  "main": "_trumps.text-align-responsive.scss",
+  "keywords": [
+    "plumpcss",
+    "oocss",
+    "css",
+    "trump",
+    "rwd"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.plumpdigital.co.uk/",
+  "dependencies": {
+    "plumpcss-defaults": "latest",
+    "inuit-responsive-settings": "latest",
+    "inuit-responsive-tools": "latest"
+  }
+}
