@@ -1,0 +1,1 @@
+# trumps.text-align-responsive
