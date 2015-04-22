@@ -6,8 +6,13 @@
 
 //    Predefine the variables below in order to alter and enable specific features.
 $plump-text-align-responsive-namespace: $plump-namespace !default;
+$plump-enable-responsive-text-align--symbol: false !default;
 
-@if $plump-enable-text-align--symbol == true {
+
+
+
+
+@if $plump-enable-responsive-text-align--symbol == true {
 
 	@each $breakpoint in $breakpoints {
 
@@ -32,6 +37,7 @@ $plump-text-align-responsive-namespace: $plump-namespace !default;
 	} // Close breakpoints loop.
 
 } // Close fractions @if.
+
 
 
 

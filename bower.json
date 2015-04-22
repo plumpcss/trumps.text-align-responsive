@@ -1,6 +1,6 @@
 {
   "name": "plumpcss-responsive-text-align",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "authors": [
     "Jon Hurrell <jon@plumpdigital.co.uk>"
   ],
@@ -17,7 +17,7 @@
   "homepage": "http://www.plumpdigital.co.uk/",
   "dependencies": {
     "plumpcss-defaults": "latest",
-    "plumpcss-settings-responsive": "latest",
+    "plumpcss-responsive-settings": "latest",
     "inuit-responsive-tools": "latest"
   }
 }
