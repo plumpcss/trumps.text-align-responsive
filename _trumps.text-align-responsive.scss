@@ -1,10 +1,11 @@
 ///*------------------------------------*\
-//   #RESPONSIVE-TEXT-ALIGN
+//	 #TEXT-ALIGN-RESPONSIVE
 //\*------------------------------------*/
 
 //    Responsive text align classes based on your responsive settings.
 
 //    Predefine the variables below in order to alter and enable specific features.
+$plump-text-align-responsive-namespace: $plump-namespace !default;
 $plump-enable-responsive-text-align--symbol: false !default;
 
 
@@ -24,9 +25,9 @@ $plump-enable-responsive-text-align--symbol: false !default;
 
 			@include media-query($alias) {
 
-				[class~="#{$plump-namespace}#{$alias}-ta\<"]     { text-align: left !important; }
-				[class~="#{$plump-namespace}#{$alias}-ta\>"]     { text-align: right !important; }
-				[class~="#{$plump-namespace}#{$alias}-ta\<\>"]   { text-align: center !important; }
+				[class~="#{$plump-text-align-responsive-namespace}u-ta\<-#{$alias}"]     { text-align: left !important; }
+				[class~="#{$plump-text-align-responsive-namespace}u-ta\>-#{$alias}"]     { text-align: right !important; }
+				[class~="#{$plump-text-align-responsive-namespace}u-ta\<\>-#{$alias}"]   { text-align: center !important; }
 
 
 			} // Close media query.
@@ -54,9 +55,9 @@ $plump-enable-responsive-text-align--symbol: false !default;
 
 			@include media-query($alias) {
 
-				.#{$plump-namespace}#{$alias}-tal                { text-align: left !important; }
-				.#{$plump-namespace}#{$alias}-tar                { text-align: right !important; }
-				.#{$plump-namespace}#{$alias}-tac                { text-align: center !important; }
+				.#{$plump-text-align-responsive-namespace}u-tal-#{$alias}                { text-align: left !important; }
+				.#{$plump-text-align-responsive-namespace}u-tar-#{$alias}                { text-align: right !important; }
+				.#{$plump-text-align-responsive-namespace}u-tac-#{$alias}                { text-align: center !important; }
 
 			} // Close media query.
 
